@@ -1,0 +1,425 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>prakhar. — Loading Portfolio Index</title>
+<!-- Google Fonts: Newsreader, Work Sans, Epilogue, Instrument Serif, Caveat -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&amp;family=Epilogue:ital,wght@0,300;0,400;0,500;1,400&amp;family=Instrument+Serif:ital@0;1&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "primary": "#a62715",
+            "tertiary": "#5c574e",
+            "on-tertiary": "#ffffff",
+            "surface-variant": "#e5e2e1",
+            "on-tertiary-fixed": "#1f1b14",
+            "error": "#ba1a1a",
+            "on-tertiary-container": "#fdf3e8",
+            "inverse-on-surface": "#f3f0ef",
+            "secondary": "#4f644c",
+            "surface-container": "#f0eded",
+            "on-secondary-container": "#536850",
+            "primary-fixed-dim": "#ffb4a6",
+            "primary-container": "#c8402b",
+            "background": "#fcf9f8",
+            "secondary-fixed-dim": "#b6cdb0",
+            "on-error": "#ffffff",
+            "secondary-container": "#cfe6c8",
+            "tertiary-fixed-dim": "#cec5ba",
+            "secondary-fixed": "#d2e9cb",
+            "surface": "#fcf9f8",
+            "surface-tint": "#b02f1c",
+            "surface-container-low": "#f6f3f2",
+            "surface-bright": "#fcf9f8",
+            "inverse-surface": "#313030",
+            "on-secondary": "#ffffff",
+            "on-primary-fixed": "#3f0200",
+            "on-surface": "#1b1b1b",
+            "on-error-container": "#93000a",
+            "on-primary": "#ffffff",
+            "on-tertiary-fixed-variant": "#4b463e",
+            "on-surface-variant": "#59413c",
+            "primary-fixed": "#ffdad4",
+            "surface-container-high": "#eae7e7",
+            "outline-variant": "#e1bfb9",
+            "surface-container-highest": "#e5e2e1",
+            "inverse-primary": "#ffb4a6",
+            "on-primary-fixed-variant": "#8d1505",
+            "tertiary-fixed": "#eae1d6",
+            "error-container": "#ffdad6",
+            "on-secondary-fixed-variant": "#384c36",
+            "on-primary-container": "#fff2f0",
+            "surface-dim": "#dcd9d9",
+            "on-background": "#1b1b1b",
+            "outline": "#8d706b",
+            "on-secondary-fixed": "#0d200d",
+            "surface-container-lowest": "#ffffff",
+            "tertiary-container": "#756f66"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "space-xl": "2.5rem",
+            "space-md": "1rem",
+            "space-xs": "0.25rem",
+            "margin-mobile": "1.25rem",
+            "gutter": "1.5rem",
+            "space-sm": "0.5rem",
+            "space-lg": "1.5rem",
+            "margin": "3rem",
+            "gutter-mobile": "1rem"
+          },
+          "fontFamily": {
+            "headline-sm": ["Newsreader", "serif"],
+            "body-md": ["Work Sans", "sans-serif"],
+            "body-sm": ["Work Sans", "sans-serif"],
+            "annotation": ["Epilogue", "sans-serif"],
+            "display-hero": ["Newsreader", "serif"],
+            "body-lg": ["Work Sans", "sans-serif"],
+            "display-hero-mobile": ["Newsreader", "serif"],
+            "headline-md": ["Newsreader", "serif"],
+            "label-md": ["Work Sans", "sans-serif"],
+            "headline-lg": ["Newsreader", "serif"],
+            "label-sm": ["Work Sans", "sans-serif"],
+            "headline-lg-mobile": ["Newsreader", "serif"],
+            "handwriting": ["Caveat", "cursive"],
+            "instrument": ["Instrument Serif", "serif"]
+          },
+          "fontSize": {
+            "headline-sm": ["24px", { "lineHeight": "30px", "letterSpacing": "0em", "fontWeight": "500" }],
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "annotation": ["14px", { "lineHeight": "20px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "display-hero": ["72px", { "lineHeight": "76px", "letterSpacing": "-0.03em", "fontWeight": "400" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "display-hero-mobile": ["42px", { "lineHeight": "46px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+            "headline-md": ["32px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600" }],
+            "headline-lg": ["48px", { "lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "600" }],
+            "headline-lg-mobile": ["32px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    /* Millimeter / graph paper grid pattern */
+    .bg-paper-grid {
+      background-color: #F2EDE4;
+      background-image: 
+        linear-gradient(to right, rgba(27, 27, 27, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(27, 27, 27, 0.05) 1px, transparent 1px),
+        linear-gradient(to right, rgba(200, 64, 43, 0.08) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(200, 64, 43, 0.08) 1px, transparent 1px);
+      background-size: 20px 20px, 20px 20px, 100px 100px, 100px 100px;
+    }
+
+    /* Tactile Paper Noise Overlay */
+    .paper-texture {
+      background-image: radial-gradient(rgba(27, 27, 27, 0.04) 1px, transparent 0);
+      background-size: 4px 4px;
+    }
+
+    /* Ink stamp texture bleed */
+    .stamp-badge {
+      border: 1.5px dashed #c8402b;
+      transform: rotate(-7deg);
+      mix-blend-mode: multiply;
+      position: relative;
+    }
+
+    /* Physical Hard Shadows */
+    .hard-shadow-card {
+      box-shadow: 4px 5px 0px #1B1B1B;
+    }
+    .hard-shadow-tie {
+      filter: drop-shadow(3px 4px 0px rgba(27, 27, 27, 0.85));
+    }
+
+    /* Initial Drop-in Animation & Physics Rig */
+    @keyframes dropInSettle {
+      0% {
+        transform: translate(-140px, -450px) rotate(-24deg);
+        opacity: 0;
+      }
+      55% {
+        transform: translate(25px, 20px) rotate(6deg);
+        opacity: 1;
+      }
+      75% {
+        transform: translate(-10px, -6px) rotate(-4.5deg);
+      }
+      88% {
+        transform: translate(4px, 2px) rotate(-1.5deg);
+      }
+      100% {
+        transform: translate(0px, 0px) rotate(-2.5deg);
+      }
+    }
+
+    .rig-animated {
+      animation: dropInSettle 1.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+      transform-origin: top center;
+    }
+
+    /* Barcode pseudo representation */
+    .barcode-strip {
+      background: repeating-linear-gradient(
+        90deg,
+        #1B1B1B,
+        #1B1B1B 2px,
+        transparent 2px,
+        transparent 4px,
+        #1B1B1B 4px,
+        #1B1B1B 7px,
+        transparent 7px,
+        transparent 9px,
+        #1B1B1B 9px,
+        #1B1B1B 10px,
+        transparent 10px,
+        transparent 13px,
+        #1B1B1B 13px,
+        #1B1B1B 16px,
+        transparent 16px,
+        transparent 18px
+      );
+    }
+
+    /* Woven lanyard herringbone weave texture */
+    .lanyard-weave {
+      background: repeating-linear-gradient(
+        45deg,
+        #2A2725,
+        #2A2725 3px,
+        #1B1B1B 3px,
+        #1B1B1B 6px
+      );
+    }
+  </style>
+</head>
+<body class="bg-paper-grid text-on-surface min-h-screen flex flex-col justify-between overflow-x-hidden selection:bg-primary-container selection:text-surface-container-lowest font-body-md antialiased relative">
+<!-- Atmospheric subtle paper noise overlay -->
+<div class="fixed inset-0 pointer-events-none paper-texture opacity-75 z-0"></div>
+<!-- Top System Header: Minimal Tactical Header & Index Coordinates -->
+
+<!-- Main Display Canvas / Interactive Card Suspending Rig -->
+<main class="relative z-10 flex-1 flex flex-col items-center justify-start w-full max-w-7xl mx-auto px-gutter pt-0">
+<!-- PHYSICAL HANGING RIG (Fabric Tie + Lanyard + Card) -->
+<div class="relative flex flex-col items-center will-change-transform select-none" id="physicalRig" style="transform: rotate(-9.91797deg);">
+<!-- 1. Centerpiece: Realistic Brick-Red Fabric Tie (Anchored at very top) -->
+<div class="relative z-30 flex flex-col items-center hard-shadow-tie">
+<!-- Tie Top Knot / Anchor Loop Collar -->
+<div class="w-9 h-7 bg-primary-container border-[1.5px] border-on-surface rounded-t-sm relative overflow-hidden flex items-center justify-center">
+<div class="absolute inset-0 opacity-20 bg-[radial-gradient(#1B1B1B_1px,transparent_1px)] [background-size:3px_3px]"></div>
+<!-- Fabric weave shadow crease -->
+<div class="w-2.5 h-full bg-primary opacity-35 mx-auto"></div>
+</div>
+<!-- Hanging Tie Body (Silky/Textured Brick Red #C8402B Fabric) -->
+<div class="w-12 h-36 bg-primary-container border-x-[1.5px] border-on-surface relative flex flex-col items-center shadow-inner overflow-hidden">
+<!-- Fine fabric texture lines -->
+<div class="absolute inset-0 opacity-15" style="background: repeating-linear-gradient(45deg, #1B1B1B, #1B1B1B 1px, transparent 1px, transparent 4px);"></div>
+<!-- Tie center pleat shadow -->
+<div class="w-3 h-full bg-[#992a18] opacity-35"></div>
+<!-- Bottom Triangular Tie Tip -->
+<div class="absolute -bottom-5 w-0 h-0 border-l-[24px] border-l-transparent border-r-[24px] border-r-transparent border-t-[20px] border-t-primary-container"></div>
+</div>
+<!-- Metallic Silver Tie Bar / Clip fastener -->
+<div class="absolute top-16 -right-1 w-14 h-2.5 bg-[#FAF7F2] border-[1.5px] border-on-surface [box-shadow:1.5px_1.5px_0px_#1B1B1B] z-40 flex items-center justify-between px-1">
+<span class="w-1 h-1 bg-on-surface rounded-full"></span>
+<span class="text-[8px] font-label-sm tracking-tighter text-tertiary">STUDIO</span>
+</div>
+</div>
+<!-- 2. Natural Woven Lanyard Ribbon & Swivel Grommet Hook -->
+<div class="relative z-20 flex flex-col items-center -mt-1">
+<!-- Vertical woven dark lanyard cord -->
+<div class="w-4 h-20 lanyard-weave border-x-[1.5px] border-on-surface relative shadow-sm">
+<div class="absolute inset-0 bg-black/10"></div>
+</div>
+<!-- Metal Swivel Trigger Snap & Clip Mechanism -->
+<div class="flex flex-col items-center -mt-0.5">
+<!-- Metal loop clamp -->
+<div class="w-6 h-3 bg-[#E6DFD1] border-[1.5px] border-on-surface rounded-t-sm flex items-center justify-center">
+<div class="w-3 h-0.5 bg-on-surface"></div>
+</div>
+<!-- Metal swivel hook ring -->
+<div class="w-4 h-6 border-[1.5px] border-on-surface bg-[#D8D0C0] rounded-b-md flex items-center justify-center -mt-0.5">
+<div class="w-1.5 h-3 bg-on-surface/40 rounded-sm"></div>
+</div>
+</div>
+</div>
+<!-- 3. Physical Student ID Card (Tactile Paper Cardstock, -2.5deg tilt, 1.5px ink border) -->
+<div class="relative z-20 w-[310px] sm:w-[350px] bg-[#FAF7F2] border-[1.5px] border-on-surface rounded-lg p-5 hard-shadow-card -mt-1 transition-transform duration-75 ease-out" id="idCardNode" style="transform: perspective(800px) rotateX(7.37381deg) rotateY(-9.74666deg);">
+<!-- Punched Slot / Oval Grommet Hole for Lanyard Clip -->
+<div class="absolute -top-3 left-1/2 -translate-x-1/2 w-8 h-3.5 bg-paper-grid border-[1.5px] border-on-surface rounded-full flex items-center justify-center shadow-inner z-30">
+<div class="w-6 h-1.5 bg-on-surface/80 rounded-full"></div>
+</div>
+<!-- Masking Tape Accent at Corner mimicking physical ephemera mounting -->
+<div class="absolute -top-2 -right-3 w-16 h-5 bg-[#E6DFD1]/85 border-[1px] border-on-surface/30 rotate-12 pointer-events-none [box-shadow:1px_1px_0px_rgba(27,27,27,0.2)]"></div>
+<!-- Card Header: Institution & Serial Track -->
+<div class="flex justify-between items-center border-b-[1.5px] border-on-surface pb-2.5 mb-3.5">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 bg-primary rounded-full border border-on-surface"></span>
+<span class="text-label-sm font-label-sm uppercase tracking-wider text-on-surface font-semibold">STUDENT FOLIO CARD</span>
+</div>
+<span class="text-label-sm font-label-sm text-tertiary tracking-widest font-mono">ID: 2025-CS-BITR</span>
+</div>
+<!-- Card Body Layout -->
+<div class="flex gap-4 items-start mb-3.5">
+<!-- Circular Monochrome Photo / Sketch Portrait Placeholder -->
+<div class="relative shrink-0">
+<div class="w-20 h-20 rounded-full border-[1.5px] border-on-surface bg-[#EBE5DA] overflow-hidden flex items-center justify-center relative [box-shadow:1.5px_1.5px_0px_#1B1B1B]"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAT-MLAprmFYPKHwSAibBdLQFbcK8AOQwCsyS_j9AIX6jXbCHPPUXa0M_4l4JMAuSJxaONLJq31Y-npJVMtTK0-I1LCgxxtImcnuB0NGqgpImON1R3EZZO8XIPjcVaa8BTlQcBhIkhTehCAFbo3qqCeq3A28IlpqhsYCkvmTYUWzgaxX5TCPyfvFIVskmjmD9391YOo3y7zk262xHKTu6kjt25iE8VMkTCg80TyFRoXieXntTR0_LOorA" alt="Prakhar Dewangan" class="w-full h-full object-cover rounded-sm grayscale contrast-105"><div class="absolute inset-0 bg-transparent mix-blend-multiply opacity-25 border-dashed border border-on-surface rounded-full pointer-events-none"></div></div>
+<!-- Tiny stamp mark on photo corner -->
+<div class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full border-[1px] border-primary text-primary flex items-center justify-center text-[7px] font-bold bg-[#FAF7F2] rotate-12">
+              SEAL
+            </div>
+</div>
+<!-- Student Credentials & Typographic ground -->
+<div class="flex-1 min-w-0 flex flex-col justify-between pt-0.5">
+<div>
+<p class="text-[10px] font-label-sm uppercase tracking-widest text-tertiary">NAME / SCHOLAR</p>
+<h1 class="font-instrument text-[26px] leading-[28px] font-bold tracking-tight text-on-surface uppercase">
+                PRAKHAR DEWANGAN
+              </h1>
+</div>
+<div class="mt-2 space-y-0.5">
+<p class="text-body-sm font-body-sm font-medium text-on-surface leading-tight">
+                B.Tech CSE, BIT Raipur
+              </p>
+<p class="text-[11px] font-body-sm text-tertiary">
+                CSVTU Affiliated • Bhilai Reg.
+              </p>
+</div>
+</div>
+</div>
+<!-- Department Tag & Batch Tag -->
+<div class="grid grid-cols-2 gap-2 mb-3 py-1.5 border-y-[1px] border-dashed border-on-surface/40">
+<div>
+<span class="text-[9px] font-label-sm uppercase tracking-wider text-tertiary block">ENROLLMENT BATCH</span>
+<span class="text-label-md font-label-md font-semibold text-primary">Batch 2025–29</span>
+</div>
+<div>
+<span class="text-[9px] font-label-sm uppercase tracking-wider text-tertiary block">STATUS CATEGORY</span>
+<span class="text-label-md font-label-md font-semibold text-secondary">Undergraduate / Eng.</span>
+</div>
+</div>
+<!-- Footer Strip: Barcode, Digits, and Angled Rubber Stamp -->
+<div class="relative flex items-center justify-between pt-1">
+<!-- Crisp vertical barcode with numeric digits below -->
+<div class="flex flex-col">
+<div class="w-36 sm:w-44 h-9 barcode-strip border border-on-surface/30"></div>
+<span class="text-[10px] font-mono tracking-[0.25em] text-on-surface mt-1">
+              *0701-4492-2025*
+            </span>
+</div>
+<!-- Distressed red ink stamp mark reading 'STUDENT' in rubber stamp border -->
+<div class="stamp-badge px-2.5 py-0.5 rounded-[4px] bg-transparent flex flex-col items-center justify-center">
+<span class="text-[9px] tracking-tight uppercase font-mono text-primary font-bold leading-none">VERIFIED</span>
+<span class="font-headline-sm text-lg font-bold tracking-widest text-primary leading-none uppercase">STUDENT</span>
+<span class="text-[8px] font-mono text-primary leading-none tracking-tighter">CS/BITR•OFFICIAL</span>
+</div>
+</div>
+</div>
+<!-- 4. Handwritten Annotation & Curved Pointer Arrow -->
+<!-- Positioned relative to ID card, drifting freely into canvas margins -->
+<div class="absolute -right-2 sm:-right-48 top-44 sm:top-36 flex flex-col items-start w-44 sm:w-56 pointer-events-none z-40 transform rotate-[1.5deg]">
+<!-- Curved ink pointer arrow SVG -->
+<svg class="w-16 h-12 text-primary -mb-1 ml-4 overflow-visible" fill="none" viewBox="0 0 64 48" xmlns="http://www.w3.org/2000/svg">
+<!-- Hand-drawn curve from note toward card -->
+<path d="M58 4C42 4 18 12 12 36" stroke="currentColor" stroke-dasharray="2 1" stroke-linecap="round" stroke-width="1.6"></path>
+<!-- Arrowhead -->
+<path d="M6 30L12 37L18 29" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"></path>
+</svg>
+<!-- Marginal note in Caveat font -->
+<div class="bg-[#FAF7F2]/90 border border-on-surface/30 p-2 rounded [box-shadow:2px_2px_0px_rgba(27,27,27,0.15)] backdrop-blur-[1px]">
+<span class="font-handwriting text-primary text-[19px] leading-[22px] font-semibold block">
+            "drops in from the top-left in a curve, settles, then follows your mouse"
+          </span>
+<span class="font-annotation text-[10px] text-tertiary block mt-1 tracking-tight">
+            fig 1.0 — tactile inertia simulation
+          </span>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Element: Inked horizontal loading rule & status annotation -->
+<footer class="relative z-20 w-full px-gutter max-w-4xl mx-auto pb-space-lg pt-space-md">
+
+</footer>
+<!-- Interactive vanilla JS: Mouse-follow 3D physical swing + loading simulation -->
+<script>
+    (function initPhysicsAndLoading() {
+      const rig = document.getElementById('physicalRig');
+      const idCard = document.getElementById('idCardNode');
+      const loadingBar = document.getElementById('loadingBar');
+      const loadPct = document.getElementById('loadPct');
+
+      let currentX = 0;
+      let currentY = 0;
+      let targetRotX = 0;
+      let targetRotY = 0;
+      let targetSwing = -2.5; // base rest tilt: -2.5 degrees
+
+      // Wait until the initial drop-in settle keyframe completes
+      setTimeout(() => {
+        rig.classList.remove('rig-animated');
+        rig.style.transform = 'rotate(-2.5deg)';
+
+        // Interactive mouse parallax follower
+        window.addEventListener('mousemove', (e) => {
+          const width = window.innerWidth;
+          const height = window.innerHeight;
+          const mouseX = (e.clientX - width / 2) / (width / 2); // -1 to 1
+          const mouseY = (e.clientY - height / 2) / (height / 2); // -1 to 1
+
+          targetSwing = -2.5 + (mouseX * 7.5);
+          targetRotX = -mouseY * 8;
+          targetRotY = mouseX * 10;
+        });
+
+        // Smooth physics loop (lerp)
+        function animatePhysics() {
+          currentX += (targetRotX - currentX) * 0.08;
+          currentY += (targetRotY - currentY) * 0.08;
+
+          rig.style.transform = `rotate(${targetSwing}deg)`;
+          idCard.style.transform = `perspective(800px) rotateX(${currentX}deg) rotateY(${currentY}deg)`;
+
+          requestAnimationFrame(animatePhysics);
+        }
+        animatePhysics();
+      }, 1750);
+
+      // Loading counter simulation
+      let progress = 0;
+      const interval = setInterval(() => {
+        progress += Math.floor(Math.random() * 8) + 2;
+        if (progress >= 100) {
+          progress = 100;
+          clearInterval(interval);
+          if (loadPct) loadPct.innerText = '[100%]';
+          if (loadingBar) loadingBar.style.width = '100%';
+        } else {
+          const formatted = progress < 10 ? `[0${progress}%]` : `[${progress}%]`;
+          if (loadPct) loadPct.innerText = formatted;
+          if (loadingBar) loadingBar.style.width = `${progress}%`;
+        }
+      }, 120);
+    })();
+  </script>
+
+
+</body></html>

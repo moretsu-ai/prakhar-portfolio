@@ -23,7 +23,9 @@ const FOLLOW = 1; // 1 = card moves toward the mouse, -1 = moves opposite
   var intro = $("#intro"), rig = $("#rig"), swing = $("#swing"), card = $("#idCard"), shine = $("#shine");
   var shell = [$("#nav"), $("#main"), $(".footer")];
   var card$ = S.card || {};
-  $$("[data-photo]").forEach(function (i) { i.src = S.photo || ""; });
+  $$("[data-photo]").forEach(function (i) {
+    i.src = "./AKS_2131%20pp.jpg";
+});
   $$("[data-name]").forEach(function (e) { e.textContent = S.name || ""; });
   $$("[data-short]").forEach(function (e) { e.textContent = S.shortName || ""; });
   $$("[data-college]").forEach(function (e) { e.textContent = card$.college || ""; });
@@ -111,7 +113,7 @@ const FOLLOW = 1; // 1 = card moves toward the mouse, -1 = moves opposite
       '<div class="hcard-anchor" aria-hidden="true"><div class="tape"></div><div class="strap"></div><div class="hook"></div></div>' +
       '<div class="paper hcard"><div class="slot"></div>' +
         '<div class="hcard-head"><div><span class="tiny">Student ID</span><br><strong>' + esc(card$.college) + "</strong></div></div>" +
-        '<div class="hcard-grid"><div class="hcard-photo"><img src="' + esc(S.photo) + '" alt="Photo of ' + esc(S.name) + '" width="160" height="200"></div>' +
+        '<div class="hcard-grid"><div class="hcard-photo"><img src="./AKS_2131%20pp.jpg" alt="Photo of ' + esc(S.name) + '" width="160" height="200"></div>' +
         "<div><h3>" + esc(S.name) + '</h3><p class="c2">' + esc(card$.affiliation) + '</p><div class="tl"><span class="tiny">Batch</span><br><b>' + esc(card$.batch) + "</b></div></div></div>" +
         '<div class="stamp" aria-hidden="true">' + esc(card$.stamp) + "</div>" +
         '<div class="hcard-foot"><div class="barcode" aria-hidden="true"></div></div>' +
@@ -123,7 +125,7 @@ const FOLLOW = 1; // 1 = card moves toward the mouse, -1 = moves opposite
   var bioHead = cut > 0 ? bio.slice(0, cut + 1) : bio, bioRest = cut > 0 ? bio.slice(cut + 2) : "";
   set("about", head(1, "About", "A bit about me.") +
     '<div class="about-grid">' +
-      '<figure class="paper polaroid reveal" style="margin:0"><div class="tape tape-top"></div><div class="ph"><img src="' + esc(S.aboutPhoto) + '" alt="' + esc(S.name) + ' with a camera" loading="lazy" width="400" height="500"></div><figcaption>' + esc(S.photoCaption) + "</figcaption></figure>" +
+      '<figure class="paper polaroid reveal" style="margin:0"><div class="tape tape-top"></div><div class="ph"><img src="./AKS_2131%20pp.jpg" alt="' + esc(S.name) + '" loading="lazy" width="400" height="500"></div><figcaption>' + esc(S.photoCaption) + "</figcaption></figure>" +
       '<div class="reveal"><div class="paper bio-card"><h3>' + esc(bioHead) + "</h3><p>" + esc(bioRest) + "</p></div>" +
         '<div class="label-rule">Skills</div><div class="chips">' +
         (S.skills || []).map(function (s) {

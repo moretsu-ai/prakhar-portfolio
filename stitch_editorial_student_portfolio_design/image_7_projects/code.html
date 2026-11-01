@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>prakhar. — Projects (GitHub)</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&amp;family=Epilogue:ital,wght@0,300..700;1,300..700&amp;family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Work+Sans:ital,wght@0,300..700;1,300..700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-primary-container": "#fff2f0",
+            "on-error": "#ffffff",
+            "outline-variant": "#e1bfb9",
+            "error": "#ba1a1a",
+            "secondary": "#4f644c",
+            "surface-container-low": "#f6f3f2",
+            "tertiary-container": "#756f66",
+            "surface-container-highest": "#e5e2e1",
+            "primary-container": "#c8402b",
+            "on-tertiary-fixed-variant": "#4b463e",
+            "tertiary-fixed-dim": "#cec5ba",
+            "on-tertiary-fixed": "#1f1b14",
+            "on-tertiary": "#ffffff",
+            "surface-container-lowest": "#ffffff",
+            "surface-tint": "#b02f1c",
+            "inverse-surface": "#313030",
+            "on-secondary-fixed-variant": "#384c36",
+            "on-secondary": "#ffffff",
+            "surface-variant": "#e5e2e1",
+            "secondary-fixed-dim": "#b6cdb0",
+            "primary-fixed-dim": "#ffb4a6",
+            "on-surface-variant": "#59413c",
+            "on-secondary-fixed": "#0d200d",
+            "primary": "#a62715",
+            "on-primary-fixed-variant": "#8d1505",
+            "surface-container-high": "#eae7e7",
+            "secondary-fixed": "#d2e9cb",
+            "surface": "#fcf9f8",
+            "surface-bright": "#fcf9f8",
+            "on-secondary-container": "#536850",
+            "surface-dim": "#dcd9d9",
+            "primary-fixed": "#ffdad4",
+            "secondary-container": "#cfe6c8",
+            "inverse-primary": "#ffb4a6",
+            "background": "#fcf9f8",
+            "error-container": "#ffdad6",
+            "on-tertiary-container": "#fdf3e8",
+            "surface-container": "#f0eded",
+            "on-error-container": "#93000a",
+            "on-background": "#1b1b1b",
+            "tertiary-fixed": "#eae1d6",
+            "inverse-on-surface": "#f3f0ef",
+            "outline": "#8d706b",
+            "on-surface": "#1b1b1b",
+            "tertiary": "#5c574e",
+            "on-primary-fixed": "#3f0200",
+            "on-primary": "#ffffff"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "gutter-mobile": "1rem",
+            "space-xs": "0.25rem",
+            "space-lg": "1.5rem",
+            "margin-mobile": "1.25rem",
+            "space-sm": "0.5rem",
+            "space-xl": "2.5rem",
+            "gutter": "1.5rem",
+            "space-md": "1rem",
+            "margin": "3rem"
+          },
+          "fontFamily": {
+            "label-sm": ["Work Sans", "sans-serif"],
+            "headline-lg-mobile": ["Newsreader", "serif"],
+            "body-sm": ["Work Sans", "sans-serif"],
+            "body-md": ["Work Sans", "sans-serif"],
+            "display-hero-mobile": ["Newsreader", "serif"],
+            "headline-sm": ["Newsreader", "serif"],
+            "label-md": ["Work Sans", "sans-serif"],
+            "body-lg": ["Work Sans", "sans-serif"],
+            "headline-md": ["Newsreader", "serif"],
+            "display-hero": ["Newsreader", "serif"],
+            "headline-lg": ["Newsreader", "serif"],
+            "annotation": ["Epilogue", "sans-serif"],
+            "mono": ["IBM Plex Mono", "monospace"],
+            "handwriting": ["Caveat", "cursive"]
+          },
+          "fontSize": {
+            "label-sm": [
+              "11px",
+              { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "600" }
+            ],
+            "headline-lg-mobile": [
+              "32px",
+              { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "400" }
+            ],
+            "body-sm": [
+              "13px",
+              { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }
+            ],
+            "body-md": [
+              "15px",
+              { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }
+            ],
+            "display-hero-mobile": [
+              "42px",
+              { "lineHeight": "46px", "letterSpacing": "-0.02em", "fontWeight": "400" }
+            ],
+            "headline-sm": [
+              "24px",
+              { "lineHeight": "30px", "letterSpacing": "0em", "fontWeight": "500" }
+            ],
+            "label-md": [
+              "12px",
+              { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600" }
+            ],
+            "body-lg": [
+              "18px",
+              { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "400" }
+            ],
+            "headline-md": [
+              "32px",
+              { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "400" }
+            ],
+            "display-hero": [
+              "72px",
+              { "lineHeight": "76px", "letterSpacing": "-0.03em", "fontWeight": "400" }
+            ],
+            "headline-lg": [
+              "48px",
+              { "lineHeight": "52px", "letterSpacing": "-0.02em", "fontWeight": "400" }
+            ],
+            "annotation": [
+              "14px",
+              { "lineHeight": "20px", "letterSpacing": "-0.01em", "fontWeight": "400" }
+            ]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    /* Physical Graph Paper Grid Texture */
+    .bg-grid-paper {
+      background-color: #F2EDE4;
+      background-image: 
+        linear-gradient(to right, rgba(27, 27, 27, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(27, 27, 27, 0.05) 1px, transparent 1px);
+      background-size: 20px 20px;
+    }
+    
+    /* Hard zero-blur shadows */
+    .ink-shadow-sm { box-shadow: 2px 2px 0px #1B1B1B; }
+    .ink-shadow { box-shadow: 3px 3px 0px #1B1B1B; }
+    .ink-shadow-lg { box-shadow: 4px 4px 0px #1B1B1B; }
+    .ink-shadow-press { box-shadow: 1px 1px 0px #1B1B1B; }
+    
+    /* Real masking tape aesthetic strip */
+    .masking-tape {
+      background-color: rgba(230, 223, 209, 0.92);
+      box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+      position: relative;
+    }
+    .masking-tape::before, .masking-tape::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 5px;
+      background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 2px,
+        rgba(215, 205, 185, 0.7) 2px,
+        rgba(215, 205, 185, 0.7) 4px
+      );
+    }
+    .masking-tape::before { left: -3px; }
+    .masking-tape::after { right: -3px; }
+
+    /* Physical ink border rules */
+    .border-ink { border-color: #1B1B1B; }
+  </style>
+</head>
+<body class="bg-grid-paper text-on-surface antialiased min-h-screen flex flex-col selection:bg-primary-container selection:text-on-primary-container">
+<!-- ==================== TOP NAVIGATION BAR ==================== -->
+<header class="w-full bg-surface/95 backdrop-blur-sm border-b-[1.5px] border-ink sticky top-0 z-50">
+<div class="w-full px-gutter max-w-7xl mx-auto flex items-center justify-between py-space-sm">
+<!-- Brand Logo -->
+<a class="font-headline-md text-headline-md tracking-tight text-on-surface font-normal lowercase hover:text-primary transition-colors" href="#">
+        prakhar.
+      </a>
+<!-- Desktop Nav Links -->
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-on-surface-variant hover:text-on-surface font-label-md text-label-md uppercase tracking-wider transition-colors duration-150" href="#">
+          About
+        </a>
+<a class="text-on-surface-variant hover:text-on-surface font-label-md text-label-md uppercase tracking-wider transition-colors duration-150" href="#">
+          Qualification
+        </a>
+<!-- ACTIVE TAB: Projects -->
+<a class="text-primary border-b-2 border-primary pb-0.5 font-label-md text-label-md uppercase tracking-wider" href="#">
+          Projects
+        </a>
+<a class="text-on-surface-variant hover:text-on-surface font-label-md text-label-md uppercase tracking-wider transition-colors duration-150" href="#">
+          Contact
+        </a>
+</nav>
+<!-- Action Buttons Cluster -->
+<div class="flex items-center space-x-3">
+<!-- Resume Action (ink outline button) -->
+<a class="hidden sm:inline-flex items-center px-3.5 py-1.5 bg-[#FAF7F2] text-on-surface text-label-md font-label-md uppercase border-[1.5px] border-ink rounded-lg ink-shadow-sm hover:translate-x-[-1px] hover:translate-y-[-1px] hover:shadow-[3px_3px_0px_#1B1B1B] active:translate-x-0.5 active:translate-y-0.5 active:shadow-[1px_1px_0px_#1B1B1B] transition-all" href="#">
+          Resume
+        </a>
+<!-- Say hi (brick red #C8402B pill button) -->
+<a class="inline-flex items-center px-4 py-1.5 bg-primary-container text-on-primary text-label-md font-label-md uppercase border-[1.5px] border-ink rounded-full ink-shadow-sm hover:translate-x-[-1px] hover:translate-y-[-1px] hover:shadow-[3px_3px_0px_#1B1B1B] active:translate-x-0.5 active:translate-y-0.5 active:shadow-[1px_1px_0px_#1B1B1B] transition-all" href="#contact">
+          Say hi
+        </a>
+</div>
+</div>
+</header>
+<!-- ==================== MAIN CONTENT SPREAD ==================== -->
+<main class="flex-grow w-full max-w-7xl mx-auto px-4 sm:px-6 md:px-gutter py-space-xl">
+<!-- Top Section Identification -->
+<div class="flex items-center space-x-2 mb-4">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-mono text-xs uppercase tracking-widest text-on-surface-variant font-semibold">
+        [SECTION 03] Projects
+      </span>
+</div>
+<!-- Section Heading & GitHub Meta Cluster -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-6 border-b-[1.5px] border-ink mb-10">
+<div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface leading-none tracking-tight">
+          Things I've built.
+        </h1>
+<p class="font-annotation text-annotation text-on-surface-variant mt-2 italic">
+          An ongoing archive of software experiments, public repos, and visual engineering artifacts.
+        </p>
+</div>
+<!-- Connected to GitHub Badge & Live Link -->
+<div class="flex flex-wrap items-center gap-3">
+<!-- Tactile GitHub Connection Badge -->
+<div class="inline-flex items-center gap-2 px-3 py-1.5 bg-[#FAF7F2] border-[1.5px] border-ink rounded-lg ink-shadow-sm">
+<!-- Tiny GitHub Mark -->
+<svg class="w-4 h-4 fill-on-surface" viewbox="0 0 24 24">
+<path clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" fill-rule="evenodd"></path>
+</svg>
+<!-- Pulsing Green Status Dot -->
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
+</span>
+<span class="font-mono text-xs font-semibold text-on-surface uppercase tracking-wide">Connected to GitHub</span>
+</div>
+<!-- Ink link -->
+<a class="inline-flex items-center gap-1 font-mono text-xs text-on-surface hover:text-primary transition-colors underline decoration-ink decoration-1 underline-offset-4" href="https://github.com/prakhardewangan" rel="noopener noreferrer" target="_blank">
+          github.com/prakhardewangan
+          <span class="text-xs">↗</span>
+</a>
+</div>
+</div>
+<!-- Filter Tabs (Editorial style) -->
+<div class="flex items-center gap-2 mb-8">
+<button class="px-3.5 py-1 bg-primary-container text-on-primary font-label-sm text-label-sm uppercase tracking-wider rounded-lg border-[1.5px] border-ink ink-shadow-sm">
+        All
+      </button>
+<button class="px-3.5 py-1 bg-[#FAF7F2] text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm uppercase tracking-wider rounded-lg border-[1.5px] border-ink transition-colors">
+        Recent
+      </button>
+<button class="px-3.5 py-1 bg-[#FAF7F2] text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm uppercase tracking-wider rounded-lg border-[1.5px] border-ink transition-colors">
+        Most liked
+      </button>
+</div>
+<!-- ==================== ASYMMETRIC PROJECT GALLERY GRID ==================== -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start mb-16">
+<!-- CARD 1: Large Featured Card (8 Columns) -->
+<article class="md:col-span-12 lg:col-span-7 xl:col-span-8 bg-[#FAF7F2] border-[1.5px] border-ink rounded-lg ink-shadow relative pt-8 pb-7 px-6 sm:px-8 transition-transform hover:-translate-y-0.5">
+<!-- Masking tape strip pinned at top center -->
+<div class="absolute -top-3.5 left-1/2 -translate-x-1/2 w-32 h-7 masking-tape border-y border-dashed border-[#C5BBAA] rotate-[-0.5deg] z-10 pointer-events-none"></div>
+<!-- Card Top Bar / Metadata -->
+<div class="flex items-center justify-between border-b-[1.5px] border-ink pb-3 mb-6">
+<span class="font-mono text-xs font-semibold text-primary uppercase tracking-widest">
+            REF. 001 // WEB
+          </span>
+<span class="font-mono text-[11px] text-tertiary uppercase tracking-wider bg-surface-container-high px-2 py-0.5 rounded border border-ink/40">
+            PERSONAL CRAFT
+          </span>
+</div>
+<!-- Main Project Info -->
+<div class="space-y-3 mb-6">
+<div class="flex items-baseline justify-between gap-4 flex-wrap">
+<h2 class="font-headline-md text-headline-md text-on-surface font-normal">
+              This portfolio
+            </h2>
+<span class="font-mono text-xs text-on-surface-variant italic">
+              v1.0.4-dev
+            </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            the site you're on right now, built as hack day practice. Structured like a tactile design handbook with ink ruling, graph paper surfaces, and deliberate archival typography.
+          </p>
+</div>
+<!-- Tech Chips with 1.5px crisp ink borders -->
+<div class="flex flex-wrap gap-2 mb-8">
+<span class="px-2.5 py-1 text-xs font-mono font-medium text-on-surface bg-[#EAE5DA] border-[1.5px] border-ink rounded">
+            HTML
+          </span>
+<span class="px-2.5 py-1 text-xs font-mono font-medium text-on-surface bg-[#EAE5DA] border-[1.5px] border-ink rounded">
+            CSS
+          </span>
+<span class="px-2.5 py-1 text-xs font-mono font-medium text-on-surface bg-[#EAE5DA] border-[1.5px] border-ink rounded">
+            JavaScript
+          </span>
+<span class="px-2.5 py-1 text-xs font-mono font-medium text-on-surface bg-[#EAE5DA] border-[1.5px] border-ink rounded">
+            Tailwind CSS
+          </span>
+</div>
+<!-- Meta Row & Physical Action Buttons -->
+<div class="pt-5 border-t-[1.5px] border-dashed border-ink flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<!-- Commit & Star info -->
+<div class="flex items-center gap-4 text-xs font-mono text-on-surface">
+<span class="inline-flex items-center gap-1 font-semibold">
+<span class="text-primary-container">★</span> 1 star
+            </span>
+<span class="text-tertiary">|</span>
+<span class="inline-flex items-center gap-1.5 text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-secondary inline-block"></span>
+              commit: stable
+            </span>
+</div>
+<!-- Buttons -->
+<div class="flex items-center gap-3">
+<!-- Live Button (Brick Red #C8402B with ink shadow) -->
+<a class="inline-flex items-center gap-1.5 px-4 py-2 bg-primary-container text-on-primary font-label-md text-label-md uppercase tracking-wider rounded-lg border-[1.5px] border-ink ink-shadow hover:translate-x-[-1px] hover:translate-y-[-1px] hover:shadow-[4px_4px_0px_#1B1B1B] active:translate-x-0.5 active:translate-y-0.5 active:shadow-[1px_1px_0px_#1B1B1B] transition-all" href="#">
+<span>Live</span>
+<span class="material-symbols-outlined text-[15px]" data-icon="open_in_new">open_in_new</span>
+</a>
+<!-- Code Button (Crisp ink outline button with arrow) -->
+<a class="inline-flex items-center gap-1.5 px-4 py-2 bg-[#FAF7F2] text-on-surface font-label-md text-label-md uppercase tracking-wider rounded-lg border-[1.5px] border-ink ink-shadow hover:bg-surface-container-high hover:translate-x-[-1px] hover:translate-y-[-1px] active:translate-x-0.5 active:translate-y-0.5 active:shadow-[1px_1px_0px_#1B1B1B] transition-all" href="https://github.com/prakhardewangan" rel="noopener noreferrer" target="_blank">
+<span>Code</span>
+<span class="material-symbols-outlined text-[15px]" data-icon="north_east">north_east</span>
+</a>
+</div>
+</div>
+</article>
+<!-- RIGHT SIDE: Empty / In-Progress Stacked Sheets (4-5 Columns) -->
+<div class="md:col-span-12 lg:col-span-5 xl:col-span-4 flex flex-col gap-8">
+<!-- CARD 2: In-Progress Wireframe Sheet (-1.5deg tilt) -->
+<div class="bg-[#FAF7F2]/90 border-[1.5px] border-dashed border-ink rounded-lg p-6 rotate-[-1.5deg] hover:rotate-0 transition-transform duration-200 relative ink-shadow-sm">
+<!-- Archival Mini Stamp -->
+<div class="flex items-center justify-between mb-4">
+<span class="font-mono text-[10px] text-tertiary uppercase tracking-widest border border-ink/40 px-2 py-0.5 bg-[#F2EDE4]">
+              DRAFT // 002
+            </span>
+<span class="font-mono text-[10px] text-primary font-bold">W.I.P.</span>
+</div>
+<!-- Sketched Ink Wireframe Doodle Box -->
+<div class="w-full h-24 border-[1.5px] border-ink/30 rounded bg-[#F2EDE4]/70 mb-4 p-2 flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center gap-1.5">
+<div class="w-2 h-2 rounded-full border border-ink/40"></div>
+<div class="w-2 h-2 rounded-full border border-ink/40"></div>
+<div class="w-2 h-2 rounded-full border border-ink/40"></div>
+<div class="h-2 w-16 bg-ink/10 rounded ml-2"></div>
+</div>
+<!-- Wireframe sketched blocks -->
+<div class="grid grid-cols-3 gap-2">
+<div class="h-8 border border-dashed border-ink/40 rounded flex items-center justify-center">
+<span class="material-symbols-outlined text-ink/30 text-xs" data-icon="crop_square">crop_square</span>
+</div>
+<div class="h-8 border border-dashed border-ink/40 rounded flex items-center justify-center">
+<span class="material-symbols-outlined text-ink/30 text-xs" data-icon="code">code</span>
+</div>
+<div class="h-8 border border-dashed border-ink/40 rounded flex items-center justify-center">
+<span class="material-symbols-outlined text-ink/30 text-xs" data-icon="terminal">terminal</span>
+</div>
+</div>
+</div>
+<!-- Handwritten cursive text in Caveat -->
+<div class="text-center py-2">
+<p class="font-handwriting text-2xl text-on-surface rotate-[-1deg]">
+              next project goes here...
+            </p>
+<p class="font-mono text-[11px] text-on-surface-variant mt-1">
+              [compiling system abstractions]
+            </p>
+</div>
+</div>
+<!-- CARD 3: Still Cooking Sheet (2deg tilt) -->
+<div class="bg-[#FAF7F2]/90 border-[1.5px] border-dashed border-ink rounded-lg p-6 rotate-[2deg] hover:rotate-0 transition-transform duration-200 relative ink-shadow-sm">
+<!-- Archival Mini Stamp -->
+<div class="flex items-center justify-between mb-4">
+<span class="font-mono text-[10px] text-tertiary uppercase tracking-widest border border-ink/40 px-2 py-0.5 bg-[#F2EDE4]">
+              LAB // 003
+            </span>
+<span class="material-symbols-outlined text-primary-container text-base" data-icon="local_fire_department">local_fire_department</span>
+</div>
+<!-- Sketched boiling doodle or kettle & code brackets -->
+<div class="w-full h-24 border-[1.5px] border-ink/30 rounded bg-[#F2EDE4]/70 mb-4 flex flex-col items-center justify-center relative">
+<!-- Doodle SVG of boiling kettle / steam / code -->
+<div class="flex items-center gap-3">
+<span class="font-mono text-lg text-primary">{</span>
+<div class="flex flex-col items-center">
+<!-- Steam wiggly doodles -->
+<div class="flex gap-1 mb-1 text-primary-container">
+<span class="text-xs font-handwriting">~</span>
+<span class="text-xs font-handwriting font-bold">~</span>
+<span class="text-xs font-handwriting">~</span>
+</div>
+<!-- Kettle / pot icon -->
+<span class="material-symbols-outlined text-on-surface text-xl" data-icon="skillet">skillet</span>
+</div>
+<span class="font-mono text-lg text-primary">}</span>
+</div>
+<span class="font-mono text-[10px] text-tertiary mt-1">status: bubbling</span>
+</div>
+<!-- Handwritten cursive text in Caveat -->
+<div class="text-center py-2">
+<p class="font-handwriting text-2xl text-primary rotate-[1deg]">
+              still cooking...
+            </p>
+<p class="font-mono text-[11px] text-on-surface-variant mt-1">
+              [low heat, lots of love]
+            </p>
+</div>
+</div>
+</div>
+</div>
+<!-- ==================== STATUS NOTE SECTION ==================== -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center border-t-[1.5px] border-ink pt-10 mb-8">
+<!-- Honest mono status line -->
+<div class="md:col-span-6 flex items-center">
+<div class="inline-flex items-center gap-3 px-4 py-2.5 bg-[#FAF7F2] border-[1.5px] border-ink rounded-lg ink-shadow-sm">
+<span class="material-symbols-outlined text-primary text-base" data-icon="terminal">terminal</span>
+<span class="font-mono text-xs md:text-sm font-semibold text-on-surface">
+            Repositories: 1, more coming soon.
+          </span>
+</div>
+</div>
+<!-- Taped index-card note box -->
+<div class="md:col-span-6">
+<div class="bg-[#FAF7F2] border-[1.5px] border-ink rounded-lg p-5 relative ink-shadow">
+<!-- Tape piece on corner -->
+<div class="absolute -top-3 right-6 w-20 h-6 masking-tape border-y border-dashed border-[#C5BBAA] rotate-3 pointer-events-none z-10"></div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary-container text-xl mt-0.5" data-icon="push_pin">push_pin</span>
+<div>
+<p class="font-body-md text-body-md text-on-surface font-medium">
+                Just getting started on GitHub. Follow along as I build.
+              </p>
+<div class="flex items-center gap-2 mt-2">
+<span class="font-annotation text-xs text-on-surface-variant italic">— Prakhar</span>
+<span class="text-primary-container font-mono text-xs font-bold">[!]</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- ==================== FOOTER (Matching Image 4 / Studio Archive) ==================== -->
+<footer class="w-full bg-surface-container-high border-t-[1.5px] border-ink mt-auto">
+<div class="w-full px-gutter max-w-7xl mx-auto py-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md">
+<!-- Copyright text -->
+<div class="text-center md:text-left">
+<p class="font-annotation text-annotation text-on-surface">
+          © Prakhar Dewangan — Engineering Journal &amp; Studio Archive. All rights stamped.
+        </p>
+</div>
+<!-- Links cluster -->
+<nav class="flex flex-wrap items-center justify-center gap-6">
+<a class="text-on-surface-variant hover:text-primary transition-opacity duration-150 hover:opacity-80 font-label-sm text-label-sm tracking-widest uppercase" href="#">
+          Index
+        </a>
+<a class="text-on-surface-variant hover:text-primary transition-opacity duration-150 hover:opacity-80 font-label-sm text-label-sm tracking-widest uppercase" href="#">
+          Archive
+        </a>
+<a class="text-on-surface-variant hover:text-primary transition-opacity duration-150 hover:opacity-80 font-label-sm text-label-sm tracking-widest uppercase" href="#">
+          Colophon
+        </a>
+<a class="text-on-surface-variant hover:text-primary transition-opacity duration-150 hover:opacity-80 font-label-sm text-label-sm tracking-widest uppercase" href="#">
+          RSS
+        </a>
+<a class="text-on-surface-variant hover:text-primary transition-opacity duration-150 hover:opacity-80 font-label-sm text-label-sm tracking-widest uppercase" href="https://github.com/prakhardewangan" rel="noopener noreferrer" target="_blank">
+          Source
+        </a>
+</nav>
+</div>
+</footer>
+</body></html>
