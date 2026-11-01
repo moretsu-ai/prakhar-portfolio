@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prakhar Dewangan — Python developer &amp; vibe coder</title>
+<meta name="description" content="Portfolio of Prakhar Dewangan, a second-year B.Tech CSE student at BIT Raipur who builds things with Python and vibe coding, and is learning data science.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Epilogue:ital,wght@0,300..600;1,300..600&family=Instrument+Serif&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400&family=Work+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@300..500,0..1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="intro-open">
+
+<!-- ============ INTRO OVERLAY ============ -->
+<div id="intro" class="intro bg-grid" aria-label="Intro">
+  <div class="rig" id="rig">
+    <div class="swing" id="swing">
+      <div class="tie" aria-hidden="true">
+        <div class="tie-knot"></div>
+        <div class="tie-body"><div class="tie-tip"></div></div>
+        <div class="tie-bar"></div>
+      </div>
+      <div class="lanyard" aria-hidden="true">
+        <div class="lanyard-cord"></div>
+        <div class="clip-top"></div>
+        <div class="clip-ring"></div>
+      </div>
+      <div class="id-card" id="idCard" role="button" tabindex="0" aria-label="Open portfolio">
+        <div class="slot"></div>
+        <div class="tape tape-corner"></div>
+        <div class="id-head">
+          <span class="dot"></span><span class="lbl">Student ID</span>
+        </div>
+        <div class="id-body">
+          <div class="id-photo"><img data-photo alt="Photo of Prakhar Dewangan" width="80" height="80"></div>
+          <div class="id-info">
+            <p class="tiny">Name</p>
+            <h2 class="id-name" data-name></h2>
+            <p class="id-college" data-college></p>
+            <p class="id-aff" data-aff></p>
+          </div>
+        </div>
+        <div class="id-meta">
+          <span class="tiny">Batch</span>
+          <span class="id-batch" data-batch></span>
+        </div>
+        <div class="id-foot">
+          <div class="barcode" aria-hidden="true"></div>
+          <div class="stamp" data-stamp></div>
+        </div>
+        <div class="shine" id="shine"></div>
+      </div>
+    </div>
+  </div>
+  <p class="intro-hint hand">click the card to come in</p>
+</div>
+
+<!-- ============ MAIN SITE ============ -->
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#home"><span data-short></span>.<i></i></a>
+    <nav class="nav-links" id="navLinks" aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#qualification">Qualification</a>
+      <a href="#projects">Projects</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn btn-outline btn-sm" id="resumeBtn" href="#" target="_blank" rel="noopener" hidden>Resume</a>
+      <a class="btn btn-primary btn-pill btn-sm" href="#contact">Say hi</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span class="material-symbols-outlined">menu</span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="bg-grid">
+  <div class="wrap">
+    <section id="home" class="hero"></section>
+    <section id="about" class="section"></section>
+    <section id="qualification" class="section"></section>
+    <section id="projects" class="section"></section>
+    <section id="achievements" class="section"></section>
+    <section id="certifications" class="section"></section>
+    <section id="hackathons" class="section"></section>
+    <section id="contact" class="section"></section>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner" id="footer"></div>
+</footer>
+
+<script src="content.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
